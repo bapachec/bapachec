@@ -1,1 +1,188 @@
-"Hello World" 
+<!DOCTYPE html>
+
+<html>
+<head> <!--tab-->
+    <title>My First Website</title>
+    <!--meta tag: data of data. represents kinds of metadata. only used in the head tag
+        tells the web browser what the webpage is about. meta tags are self closing.
+        no closing meta tag needed-->
+    <!--Tells web browser what sort of character encoding we're using. UTF-8 is highly encouraged-->
+    <meta charset="UTF-8">
+    <!--These will help tell what this webpage is about through desc, keywords, name of author-->
+    <meta name="description" content="Free Coco for chicken">
+    <meta name="keywords" content="Dog, chicken, beef, pizza">
+    <meta name="author" content="Brando">
+    <!--Below is what makes webpage scale proportionately with mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--make webpage auto refresh in this amount of seconds-->
+    <!--<meta http-equiv="refresh" content="30">-->
+    <!--The whole idea about meta tags is that we need to tell the web browser information about our website-->
+</head>
+<body>
+
+    <!--Learning some html-->
+    <!--This is horseshit-->
+    <h1>I like Pizza</h1>
+    <h1>This is my website</h1>
+    <hr>
+    <br>
+
+    <hr> <!--target=_blank opens another tab: =self uses the same tab-->
+    <a href = "https://www.papajohns.com/" target=_blank title="This takes you to Papa Johns">
+    <h2>I like Pizza</h2>
+    </a>
+    <hr>
+
+    <a href="https://7tv.app/emotes/6233114193f45689df9787b1" target=_blank>
+    <!--if image is in another location, paste path to the image-->
+    <img src="kinda weird.png" height="300" width="800" alt="This is a picture of gato" title="Cato is weird about you">
+    <!--Its good practice to add alternate text to images like explaining them-->  
+    <!--Advice: put images in image folder in project folder-->
+    </a>
+
+    <!--controls is a boolean attribute: True if its wrote out, False if its not written out-->
+    <!--Controls make it so that a play button with volume control and download for shows-->
+    <!--other boolean attributes are autoplay, muted, loop-->
+    <!--best practice is not have src within audio tag but nested in between audio tags
+    incase of formats like mp3 might not be supported which will not play first audio 
+    you intend to play-->
+    <audio controls loop>
+            <source src ="The_Premier.mp3"> <!--First audio to play-->
+            <source src ="The_Premier.wav"> <!--Second audio to play if first doesn't play-->
+            <!--NOTE: .wav does not exist, its merely to show the concept-->
+            This browser does not support HTML5 audio 
+            <!-- ^^^Text if all audio fail to play-->
+    </audio>
+    <br>
+    <br>
+    <!--Same concept as audio-->
+    <video controls loop width="500">
+        <source src="">
+        <source src="Dog HOWL.WebM">
+        This browser does not support HTML5 Video
+    </video>
+
+    <!--Different format txt-->
+    <P>This is some sample text</P>
+    <P>This is normal text</P>
+    <P>This is <b>bold</b> text</P>
+    <P>This is <i>italic</i> text</P>
+    <P>This is <big>big</big> text</P>
+    <P>This is <small>small</small> text</P>
+    <P>This is <sub>subscript</sub> text</P>
+    <P>This is <sup>superscript</sup> text</P>
+    <P>This is <ins>inserted</ins> text</P>
+    <P>This is <del>deleted</del> text</P>
+    <P>This is <mark>marked</mark> text</P>
+    <br>
+
+    <h4>Unordered list</h4>
+    <ul>
+        <li>Pizza dough</li>
+        <li>tomato sauce</li>
+        <li>cheese</li>
+        <li>toppings <!--Can make bullets points within a bullet point use another ul and start over with more li-->
+            <ul>    
+                <li>pepperoni</li>
+                <li>mushrooms</li>
+                <li>peppers</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+    <h4>Ordered list</h4>
+    <!--Different type of order such as: 
+        numbered(1) default
+        Roman numerals(I) Uppercase
+        Roman numerals(i) lowercase
+        Letters(A) Uppercase
+        Letters(a) lowercase -->
+    <ol type="A"> 
+        <li>eat breakfast</li>
+        <li>eat lunch</li>
+        <li>eat dinner</li>
+    </ol>
+    <br>
+
+    <!--dl means description list
+            dt means description term
+            dd means description definition
+            ^^^^These two above are used in pairs-->
+    <h4>Description list</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>This adds structure to a webpage</dd>
+        <dt>CSS</dt>
+        <dd>This adds style to a webpage</dd>
+        <dt>Javascript</dt>
+        <dd>This adds functionality to a webpage</dd>
+    </dl>
+
+    <!--Table. tr: table row, th: table header, td: table data-->
+    <h3>Store hours</h3>
+    <table bgcolor="black">
+        <tr bgcolor="grey" width="700"> <!--width is ((th width) * (num of th)) -->
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>Closed</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+
+</body>
+
+<!--div is used to define a specific section of the webpage. think of another body tag.
+    Defines a division of a document-->
+<!--SOME CSS knowledge. Colors. Colors can be literal color names, hexadecimals, rgb values-->
+<div style="background-color: rgb(235, 171, 134)">
+
+    <!--color value changes text color-->
+    <h1 style="color: red">Hello</h1>
+    <h1 style="color: rgb(9, 62, 222)">Hello2</h1>
+    <h1 style="color: #28f005">Hello3</h1>
+
+    <!--style can take multiple values, use semicolon (;) to do so just like below-->
+    <!--span: adds markup to text or portion of a document. surround a part of text with span tag with attributes like color-->
+    <p style="background-color: #222222; color:#28f005">Coco wants chicken. So he went to the store by himself. He did this by driving a car to shoprite.
+        <span style="color: red">He went in the store and went to the meat aisle but is dissappointed.</span> He found out that there was none left.
+        He then left and arrived home sad. He decided to order mexican food because of this.
+    </p>
+</div>
+
+<!-- iframe = embed content from another source into an HTML document
+                ex. used for ads, used in many hacking techniques. self closing tag
+            does not work with many major websites like google, have disabled iframes. prevents posing-->
+
+<iframe style="border:0" src="ad.html" width="750" height="100"></iframe>
+<br>
+<br>
+
+<!--Creating buttons-->
+<a href="https://www.google.com">
+<!--dosomething() represents javascript functionality-->
+<button onclick ="dosomethin()" style="background-color: #333333;color: #00FF00; border-radius: 5px;">Click me</button>
+</a>
+
+<p id="test">Hello</p>
+
+<!--Very simple javascript program-->
+<script>
+    function dosomethin(){
+        document.getElementById("test").innerHTML="Goodbye";
+    }
+</script>
+
+</html>

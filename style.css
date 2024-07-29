@@ -1,10 +1,28 @@
 body{
-    margin: 0;
+    margin: 0px;
+    font-family: "consolas", sans-serif;
 }
 
-table{
-    margin-left: auto;
+#author{
+    font-size: 32px;
+    border: 3px solid;
+    border-radius: 7px;
+    width: 300px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 25px;
     margin-right: auto;
+    text-align: center;
+
+}
+
+#summary{
+    border: 3px solid;
+    border-radius: 7px;
+    width: 600px;
+    height: 200px;
+    padding: 5px;    
+    margin-left: 25px;
 }
 
 footer{

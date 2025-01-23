@@ -5,6 +5,11 @@ body {
     color: white;
 }
 
+#content {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
 #headerbox {
     border: 1px solid;
     border-color: rgb(32, 32, 32);
@@ -37,34 +42,32 @@ h2 {
     padding-left: 25px;
 }
 
+ul {
+    font-size: 18px;
+}
+
 #author {
     clear: left;
-    border: 3px solid;
-    border-radius: 7px;
+
     width: 1000px;
-    margin-left: 1%;
     
 }
 
 #education{
     margin-top: 5px;
-    border: 3px solid;
-    border-radius: 7px;
+
     width: 1000px;
-    margin-left: 1%;
     
 }
 
 #coursework {
-    
-    margin-top: 50px;
     clear: left;
-    margin-left: 30px;
 }
 
+
+
 #project {
-    
-    margin-left: 30px
+
 }
 
 footer {

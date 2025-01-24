@@ -1,23 +1,19 @@
 body {
-    margin: 0px;
     font-family: "consolas", sans-serif;
     background-color: rgb(32, 32, 32);
     color: white;
 }
 
 #content {
-    margin-top: 50px;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #headerbox {
-    border: 1px solid;
-    border-color: rgb(32, 32, 32);
-    width: 100%;
-    height: 55px;
-    background-color: cadetblue;
     position: sticky;
-    top: 0px;
+    width: 100%;
+    background-color: cadetblue;
 }
 
 .header {
@@ -43,7 +39,7 @@ h2 {
 }
 
 h3 {
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 ul {
@@ -78,7 +74,5 @@ span.github {
 }
 
 footer {
-    background-color: rgba(20, 85, 155, 0.267);
     text-align: center;
-    
 }
